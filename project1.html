@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>    
+    <link rel="stylesheet" href="src/style.css">
+    <title>My Weather App</title> 
+  </head>
+  <body> 
+    <div class="weatherApp">
+    <header>
+      <form action="/submit" id="search-form">
+        <input type="search" placeholder="enter a city..." class="searchInput" id="searchInput" required />
+        <input type="submit" value="Search"  id="searchButton"/>
+      </form>
+    </header>
+    <section> 
+      <div class="currentWeather"> 
+        <div>
+        <h1 class="current-city" id="current-city">
+          Durban Central
+        </h1> 
+        <p class="details"> 
+          <span id="currentDate"></span> <br/>Humidity: <strong>82%</strong>, Wind: <strong>8.2Km/h</strong>
+        </p> 
+        </div>
+      <div class="currentTemperature">
+      <span class="current-temperature-icon">☀️</span>
+      <span class="current-temperature-value" id="current-temperature-value">30&#176 </span> 
+      </div> 
+      </div>
+    </section> 
+    <p>
+      This project was coded by
+          <a href="#" target="_blank">Thobeka</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+    </p> 
+    <script src="src/index.js"></script>
+  </body>
+</html>
